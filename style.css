@@ -1,0 +1,90 @@
+.carousel-inner img {
+    width: 100%;
+     
+  }
+ .navbar-item a{
+    padding-left: 60px;
+    font-weight: bolder;
+    color:white;
+
+       
+  }
+  .navbar-item a:hover{
+    color:brown;
+    text-decoration: none;
+  }
+  .carousel-caption    {
+    top: 0;
+    bottom: auto;
+    margin-left: 20%;
+}
+.carousel-caption  a{
+   animation-name: navbar;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s; 
+   margin:10px;
+}   
+@keyframes navbar {
+   
+  25%{color: white;}
+  50%{color:orangered}
+  100%{color:yellow}
+}
+.carousel-caption  a:hover{
+   
+  font-weight: bolder;
+   
+} 
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption a:hover  {
+    float: none;
+    width: 100%;
+  }
+}
+#title{
+  text-align: center;
+  background-color: saddlebrown;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 2px 2px saddlebrown;
+}
+#image{
+  border: 5px double orangered;
+  animation-name: image;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+@keyframes image{
+  25%{border:5px solid orangered;
+   box-shadow: 6px orange;}
+   50%{
+     border:5px solid orange;
+     box-shadow: 6px sandybrown;
+   }
+   100%{
+    border: 5px double rgb(255, 0, 85);
+   }
+}
+#life{
+   animation-name: life;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+}
+@keyframes life
+{
+  25%{ color: blueviolet;}
+  50%{color: deeppink;}
+  100%{color: maroon;}
+}
+#service, #aboutus{
+    background-color: gray;
+    color: white;
+    font-style: italic;
+}
+#service h3 , #aboutus h3{
+    color: orangered;
+     
